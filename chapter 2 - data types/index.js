@@ -11,3 +11,33 @@ undefined for unassigned values – a standalone type that has a single value un
 object for more complex data structures.
 symbol for unique identifiers. 
 */
+// 9007199254740991
+
+let myNumber = 100;
+myNumber = 90; // integer
+myNumber = 90.3434; // float | Decimal
+
+// String
+
+let myString = "Java Script is Beautiful";
+myString = "I will learn JS"
+// myString = 9007199254740992232232n;
+
+// Boolean
+let myBoolean = true; // Boolean
+myBoolean = 4>1;
+
+// Init any Variable
+
+let myLaterUsedVar = null;
+myLaterUsedVar = 90;
+
+
+// undefined Check
+
+let myUndefined = undefined;
+
+// Object -> Array
+
+let myObject = [1,2,3,4,5,6,"asas"]
+// myObject = {key:"12",value:"Item"}

@@ -8,7 +8,8 @@
 </head>
 <style>
     body {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: sans-serif;
+      
         
     }
     h1 {
@@ -16,22 +17,53 @@
     }
     h2 {
         color: blueviolet;
+        font-size: 18px;
+        font-weight: 500;
     }
     h3 {
         color: darkgreen;
+        font-size: 16px;
+        font-weight: 900;
     }
 </style>
 <body>
-    <h1>JS Tutorial Chapter 1 - Variables and values</h1>
-    <ul>
-        <li><h2>How to define Variable</h2></li>
-        <li><h2>Diffrent Types of Variables in JS</h2></li>
-        <ul>
-            <li><h2 style="color: red;">var - <b><i>Attach to window (do not use)</i></b></h2></li>
-            <li><h2>let - <b><i>Initialized only once</i></b></h2></li>
-            <li><h2>Const - <b><i>Defined only once</i></b></h2></li>
-        </ul>
-    </ul>
+    <h1>JS Tutorial Chapter 2 - Datatypes</h1>
+    <ol id="temperatures" > </ol>
+  
 </body>
-<script src="chapter 1 - Variables and values/index.js"></script>
+<script src="chapter 2 - data types/index.js"></script>
+<script>
+    dataTypes()
+    function dataTypes () {
+        const datatypesobj = [
+            {
+            type: "integer or floating-point" ,defination:"integers are limited by ±(253-1)"
+        },
+        {
+            type: "bigint" ,defination:"bigint is for integer numbers of arbitrary length"
+        }, {
+            type: "string" ,defination:"A string may have zero or more characters, there’s no separate single-character type."
+        }, {
+            type: "boolean" ,defination:"boolean for true/false."
+        }, {
+            type: "null" ,defination:"null for unknown values – a standalone type that has a single value null."
+        }, {
+            type: "undefined" ,defination:"undefined for unassigned values – a standalone type that has a single value undefined."
+        }, {
+            type: "object" ,defination:"object for more complex data structures."
+        }, {
+            type: "symbol" ,defination:"symbol for unique identifiers."
+        },
+    ]
+    var items = document.getElementsByClassName("item");
+    ul = document.createElement('ul');
+    
+   var datatype =  datatypesobj.map(function (t,i){
+            return  `<div><h2><b style="color:green">${t.type}</b> - <i>${t.defination}</i></h2>`
+        })
+        
+        document.getElementById('temperatures').innerHTML =
+        '<li>' + datatype.join('</li><li>') + '</li>'
+    }
+</script>
 </html>
