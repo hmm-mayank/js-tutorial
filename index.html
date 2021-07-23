@@ -27,33 +27,29 @@
     }
 </style>
 <body>
-    <h1>JS Tutorial Chapter 2 - Datatypes</h1>
+    <h1>JS Tutorial Chapter 3 - Operators</h1>
     <ol id="temperatures" > </ol>
   
 </body>
-<script src="chapter 2 - data types/index.js"></script>
+<script src="chapter 3 - Operators/index.js"></script>
 <script>
     dataTypes()
     function dataTypes () {
         const datatypesobj = [
             {
-            type: "integer or floating-point" ,defination:"integers are limited by ±(253-1)"
+            type: "Airthmatic Operation" ,defination:"+,-,/,*,%,++,--"
         },
         {
-            type: "bigint" ,defination:"bigint is for integer numbers of arbitrary length"
+            type: "Comparison Operator" ,defination:"==, ===,!=, > (Greater than) , < (Less than),>=,<="
         }, {
-            type: "string" ,defination:"A string may have zero or more characters, there’s no separate single-character type."
+            type: "Logical Operator" ,defination:"||, &&, !"
         }, {
-            type: "boolean" ,defination:"boolean for true/false."
+            type: "Assignment Operators" ,defination:"=,+=,-=,*=,/="
         }, {
-            type: "null" ,defination:"null for unknown values – a standalone type that has a single value null."
+            type: "Ternary Operators" ,defination:":?"
         }, {
-            type: "undefined" ,defination:"undefined for unassigned values – a standalone type that has a single value undefined."
-        }, {
-            type: "object" ,defination:"object for more complex data structures."
-        }, {
-            type: "symbol" ,defination:"symbol for unique identifiers."
-        },
+            type: "typeof Operator" ,defination:"typeOf Variable"
+        }
     ]
     var items = document.getElementsByClassName("item");
     ul = document.createElement('ul');
