@@ -8,13 +8,10 @@
 
 // Variable Init
 
-var name = "Javascript new" ;
-let imporvedName = "I am doing better";
-
-var name = "My name will be here";
-imporvedName = "My name is Mayank/shashank"
-
-const staticValue = "ALPHA";
 
 
- console.log('%c hdd', 'background: #222; color: #bada55');
+
+function clg (value,color="#bada55") {
+    console.log(`%c ${value}`, `background: #222; color: ${color};font-size:50px`);
+
+ }

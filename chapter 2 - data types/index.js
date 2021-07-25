@@ -13,31 +13,106 @@ symbol for unique identifiers.
 */
 // 9007199254740991
 
-let myNumber = 100;
-myNumber = 90; // integer
-myNumber = 90.3434; // float | Decimal
 
-// String
+// Integer
 
-let myString = "Java Script is Beautiful";
-myString = "I will learn JS"
-// myString = 9007199254740992232232n;
+// Integer - 0,1,2,3,45
+// Float - 12.323
+// bigInt - 12122122n
 
-// Boolean
-let myBoolean = true; // Boolean
-myBoolean = 4>1;
-
-// Init any Variable
-
-let myLaterUsedVar = null;
-myLaterUsedVar = 90;
+let integerTest = 12000232032n;
+// clg(integerTest);
 
 
-// undefined Check
+// STRING
 
-let myUndefined = undefined;
+let stringTest = "youtube"
+// clg(stringTest);
 
-// Object -> Array
+// BOOLEAN
 
-let myObject = [1,2,3,4,5,6,"asas"]
-// myObject = {key:"12",value:"Item"}
+let boolTest = true;
+// clg( 4/2 == 3);
+
+// NULL
+
+let nullTest = null;
+// clg(nullTest);
+
+// object
+
+let objectTestArray = [1,2,3,4,5,"asd"]
+let objectTestObj = {key:1,name:"chapter2"}
+
+// clg(typeof integerTest);
+
+
+
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+Example 2:
+
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+Example 3:
+
+Input: nums = [3,3], target = 6
+Output: [0,1]
+ */
+ var twoSum = function(nums, target) {
+  
+    const arrayMap = new Map ();
+  for (let i = 0; i<nums.length;i++){
+      let cur = nums[i];
+      let x = target - cur;
+      if(arrayMap.has(x)) {
+          return [arrayMap.get(x),i]
+      } else arrayMap.set(cur,i) 
+  }
+    
+};
+let getData = twoSum([3,2,4],6)
+clg(getData)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function clg (value,color="#bada55") {
+    console.log(`%c ${value}`, `background: #222; color: ${color};font-size:50px`);
+
+ }
