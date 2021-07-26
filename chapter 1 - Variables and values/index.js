@@ -21,20 +21,36 @@
 
 //var
 
-var varTest = "youtube";
-var varTest = "Flicker";
-// clg(varTest)
-var varTest = "Yahoo";
-// clg(varTest,"green");
-//let
-let letTest = "facebook";
-letTest = "Instagram";
-// clg(letTest)
 
-// const
-const pi=3.14;
 
-clg(pi);
+var varTest = "mayank";
+var varTest = "JS Training";
+// clg(varTest);
+
+
+// let
+
+let letTest = "letTr";
+ letTest = "JS Training";
+// clg(letTest);
+
+// const 
+
+const pi = null;
+// clg(pi);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
