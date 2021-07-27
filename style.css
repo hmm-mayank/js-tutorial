@@ -2,6 +2,19 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 500; 
+  color: linear-gradient(rgba(
+    255,255,255,0.8),
+rgba(255,255,255,0.3) 
+);
+}
+h2 {
+
 }
 main {
     min-height: 100vh;
@@ -45,4 +58,9 @@ main {
 .circle2 {
     bottom:5%;
     left: 10%;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
