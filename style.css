@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    display: flex;   /* Make this flex */
+    align-items: center; /* Align vertical */
+    justify-content: center; /* Align Horizontal */
+}
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,rgba(
+        255,255,255,0.7), /* 0.7 opacity */
+    rgba(255,255,255,0.3)  /* 0.3 opacity */
+    );
+    border-radius: 2rem; 
+    z-index: 3;
+    backdrop-filter: blur(2rem); /** Make Circle Blur **/
+}
+
+.circle1, .circle2 {
+    
+    background: linear-gradient(to right bottom,rgba(
+        255,255,255,0.8), /* 0.7 opacity */
+    rgba(255,255,255,0.3)  /* 0.3 opacity */
+    );
+    height: 20rem; /** hright and widht should be same to make it circle **/
+    width: 20rem;
+    position: absolute;
+    z-index: 2;
+   border-radius: 50%;
+    
+}
+.circle1 {
+    top:5%;
+    right: 15%;
+   
+}
+
+.circle2 {
+    bottom:5%;
+    left: 10%;
+}

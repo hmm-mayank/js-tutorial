@@ -1,65 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Tutorial</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
 </head>
-<style>
-    body {
-        font-family: sans-serif;
-      
-        
-    }
-    h1 {
-        color: black;
-    }
-    h2 {
-        color: blueviolet;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    h3 {
-        color: darkgreen;
-        font-size: 16px;
-        font-weight: 900;
-    }
-</style>
+
 <body>
-    <h1>JS Tutorial Chapter 3 - Operators</h1>
-    <ol id="temperatures" > </ol>
-  
-</body>
-<script src="chapter 3 - Operators/index.js"></script>
-<script>
-    dataTypes()
-    function dataTypes () {
-        const datatypesobj = [
-            {
-            type: "Airthmatic Operation" ,defination:"+,-,/,*,%,++,--"
-        },
-        {
-            type: "Comparison Operator" ,defination:"==, ===,!=, > (Greater than) , < (Less than),>=,<="
-        }, {
-            type: "Logical Operator" ,defination:"||, &&, !"
-        }, {
-            type: "Assignment Operators" ,defination:"=,+=,-=,*=,/="
-        }, {
-            type: "Ternary Operators" ,defination:":?"
-        }, {
-            type: "typeof Operator" ,defination:"typeOf Variable"
-        }
-    ]
-    var items = document.getElementsByClassName("item");
-    ul = document.createElement('ul');
     
-   var datatype =  datatypesobj.map(function (t,i){
-            return  `<div><h2><b style="color:green">${t.type}</b> - <i>${t.defination}</i></h2>`
-        })
-        
-        document.getElementById('temperatures').innerHTML =
-        '<li>' + datatype.join('</li><li>') + '</li>'
-    }
-</script>
+    <main >
+        <section class="glass"></section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    
+</body>
+
 </html>
