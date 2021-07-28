@@ -79,3 +79,8 @@ function clg (value,color="#bada55") {
 // HashMap 
 // Array 
 // Object  
+
+
+
+
+
